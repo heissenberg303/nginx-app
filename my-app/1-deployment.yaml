@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: bar
+  namespace: foo
   labels:
     app: nginx
 spec:
@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: heissenberg/nginx:v0.1.2
+          image: heissenberg/nginx:v0.1.2 # later automatic using build agent
           ports:
             - containerPort: 80
