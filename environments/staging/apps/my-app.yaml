@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/heissenberg303/lesson-158.git
+    repoURL: https://github.com/heissenberg303/nginx-app.git
     targetRevision: HEAD
     path: environments/staging/my-app
   destination:
